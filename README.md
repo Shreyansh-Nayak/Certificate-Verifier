@@ -1,0 +1,2 @@
+Problem Statement:
+Educational and training certificates are often forged or tampered with, making verification difficult and unreliable. This project aims to design and implement a secure Certificate Verification System that allows institutions to issue tamper-proof certificates and enables third parties to verify their authenticity through a public verification portal using cryptographic hashing.
