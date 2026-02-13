@@ -6,7 +6,13 @@ import authRoutes from "./routes/auth.routes.js";
 const app = express();
 
 // 1️⃣ Global middlewares FIRST
-app.use(cors());
+app.use(cors({
+  origin: [
+    "http://localhost:5173",
+    "https://your-vercel-domain.vercel.app"
+  ],
+  credentials: true
+}));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
