@@ -4,13 +4,13 @@ import { getAuth, GoogleAuthProvider } from "firebase/auth";
 // TODO: Replace with your actual Firebase project configuration
 // Get these from Firebase Console -> Project Settings -> General -> Your apps -> SDK setup/configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyD8Qlm8_kdYq8ZCN8-nMyjWxZ5vd7y0efE",
-    authDomain: "certificate-verifier-11e9c.firebaseapp.com",
-    projectId: "certificate-verifier-11e9c",
-    storageBucket: "certificate-verifier-11e9c.firebasestorage.app",
-    messagingSenderId: "1049005291930",
-    appId: "1:1049005291930:web:7d0158fd0513d1b3ada223",
-    measurementId: "G-NJRS30BZYF"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 // Initialize Firebase
